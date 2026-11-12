@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Low-View Filter for YouTube</title>
+<meta name="description" content="Privacy policy for the Low-View Filter for YouTube Chrome extension.">
+<link rel="icon" href="img/icon-128.png">
+<style>
+  :root{--ink:#12131a;--muted:#5b6070;--line:#e6e8ee;--accent:#e23a2e}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    color:var(--ink);background:#fff;
+    font:16.5px/1.72 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:56px 24px 96px}
+  header{display:flex;align-items:center;gap:11px;margin-bottom:44px}
+  header img{width:30px;height:30px;border-radius:8px}
+  header b{font-size:14.5px}
+  header a{margin-left:auto;font-size:13.5px;color:var(--muted)}
+  h1{font-size:34px;line-height:1.12;letter-spacing:-.03em;margin-bottom:8px}
+  .date{color:var(--muted);font-size:14px;margin-bottom:34px}
+  h2{font-size:17px;letter-spacing:-.01em;margin:34px 0 8px}
+  p,li{color:#2a2d38}
+  p{margin-bottom:12px}
+  ul{margin:6px 0 14px 20px}
+  li{margin-bottom:7px}
+  hr{border:0;border-top:1px solid var(--line);margin:40px 0}
+  .note{background:#fafafa;border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:14.5px;color:var(--muted)}
+  a{color:var(--accent)}
+  footer{margin-top:44px;font-size:13.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="img/icon-128.png" alt="">
+    <b>Low-View Filter</b>
+    <a href="index.html">Back to home</a>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <div class="date">Low-View Filter for YouTube — last updated 13 November 2026</div>
+
+  <p>
+    Low-View Filter for YouTube ("the extension") hides YouTube search and feed results
+    that fall below a view count or upload date chosen by the user.
+  </p>
+
+  <h2>What the extension stores</h2>
+  <p>
+    Your filter settings — view floor, upload cut-off, rule mode and the feature toggles —
+    are saved with <code>chrome.storage.sync</code>. That storage belongs to Chrome and is
+    tied to your Chrome profile. If you have Chrome Sync turned on, Chrome may sync those
+    settings between your own devices; that sync is performed by Chrome, not by us.
+  </p>
+
+  <h2>What the extension does not do</h2>
+  <ul>
+    <li>It does not collect, transmit or sell any personal data.</li>
+    <li>It does not read your browsing history, cookies, accounts or identity.</li>
+    <li>It does not make network requests of its own, and it contains no analytics,
+        telemetry or advertising code.</li>
+    <li>It does not use remote code. All code ships inside the extension package.</li>
+    <li>It does not modify YouTube's servers or your account in any way.</li>
+  </ul>
+
+  <h2>What the extension reads</h2>
+  <p>
+    On <code>youtube.com</code> pages only, the extension reads the text already displayed on
+    result cards — the view count and upload date — to decide whether a card matches your
+    rule. That reading happens in your browser and is never stored or sent anywhere.
+  </p>
+
+  <h2>Third parties</h2>
+  <p>No third parties receive data from this extension.</p>
+
+  <h2>Removing your data</h2>
+  <p>
+    Uninstalling the extension removes its stored settings from that Chrome profile. You can
+    also reset them at any time with the Reset button in the extension popup.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy: open an issue on
+    <a href="https://github.com/jeet-dhandha/low-view-filter/issues">GitHub</a> or use the
+    contact address on the Chrome Web Store item page.
+  </p>
+
+  <div class="note">
+    Low-View Filter for YouTube is an independent project and is not affiliated with or
+    endorsed by YouTube or Google.
+  </div>
+
+  <footer>
+    © 2026 · <a href="index.html">Low-View Filter</a>
+  </footer>
+</div>
+</body>
+</html>
